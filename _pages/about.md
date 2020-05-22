@@ -2,7 +2,7 @@
 layout: about
 title: About Me
 permalink: /about/
-headshot: /images/headshot.png
+headshot: /images/headshot.jpg
 ---
 
 ### Education
