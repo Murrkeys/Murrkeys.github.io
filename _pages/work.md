@@ -4,4 +4,19 @@ title: Professional Projects
 permalink: /work/
 ---
 
-Professional projects in the works. 
+<table class="table">
+  <thead>
+    <tr>
+      <th class="has-text-centered">Project</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for project in site.data.work.coding %}
+    <tr>
+      <td class="has-text-centered"><a href="{{project.url}}" target="_blank">{{ project.name }}</a></td>
+      <td>{{ project.description }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table
