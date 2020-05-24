@@ -4,9 +4,7 @@ title: Professional Projects
 permalink: /work/
 ---
 
-Concise examples of past professional projects. 
-
-$~$
+Concise examples of past professional projects.  
 
 Project | Description
 ------------ | -------------
