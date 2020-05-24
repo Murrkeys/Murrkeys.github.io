@@ -4,4 +4,4 @@ title: Personal Posts
 permalink: /other/
 ---
 
-Work in progress :)
+A random collection of personal thoughts and memories. 
