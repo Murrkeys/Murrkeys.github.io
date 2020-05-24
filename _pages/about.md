@@ -7,7 +7,7 @@ headshot: /images/headshot.jpg
 
 ### Education
 
-I am currently pursuing a Master's degree in Health Data Science at the University of New South Wale's [Centre for Big Data Research in Health](https://cbdrh.med.unsw.edu.au/) in Sydney, Australia. 
+I am currently pursuing a Master's degree in Health Data Science at the University of New South Wale's [Centre for Big Data Research in Health](https://cbdrh.med.unsw.edu.au/). 
 
 I have a Bachelor of Science from Cornell University where I studied [Operations Research Engineering](https://www.orie.cornell.edu/orie).
 
