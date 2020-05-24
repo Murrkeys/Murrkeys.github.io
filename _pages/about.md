@@ -7,23 +7,30 @@ headshot: /images/headshot.jpg
 
 ### Education
 
-I am currently studying Health Data Science at the University of New South Wale's [Centre for Big Data Research in Health](https://cbdrh.med.unsw.edu.au/) in Sydney, Australia. 
+I am currently pursuing a Master's degree in Health Data Science at the University of New South Wale's [Centre for Big Data Research in Health](https://cbdrh.med.unsw.edu.au/) in Sydney, Australia. 
 
 I have a Bachelor of Science from Cornell University where I studied [Operations Research Engineering](https://www.orie.cornell.edu/orie).
 
 
 ### Work
 
-Following university, I began working as a junior data scientist for Verizon Wireless. My work at Verizon focused on customer analytics, primarily in churn predictive modeling.
+I am currently working as a Principal Analyst for the UC San Diego Health System. My work at UCSD has focused on building out the organization's analytics infrastructure while also engaging in multiple process improvement projects. 
 
-Since 2016, I have been working as a principal analyst for the UC San Diego Health System.  I have been the primary analyst for the Deparment of Patient Flow and Capacity Management since 2017. My work at UCSD has focused on building out the analytics infrastructure used by upper level management while also engaging in multiple process improvement projects.  
+I began my career working as a Junior Data Scientist for Verizon Wireless. My work at Verizon focused on customer analytics, primarily in churn predictive modeling.
 
+Please visit the *Work* page for examples of specific professional projects. 
+
+ 
 ### Career Interests
 
-I am interested in applying data science techniques in the area of population health.  
+The application of data science techniques in population health, health system operations, and health outcomes.  
 
 ### Personal
 
-I enjoy all things sports. I'm an avid reader, cook, runner, and outdoor enthusiast.
+I grew up in Charlotte, NC. I attended university in Ithaca, NY.  I have worked and lived in greater New York City area and San Diego. I now live in Sydney, NSW.  
+
+I love watching and playing sports, mainly soccer. During the weekdays, I am usually reading, running, swimming, cooking, and watching movies.  On the weekends, I am usually traveling and enjoying the outdoors.  
+
+Please visit the *Other* page for personal related content. 
 
 
