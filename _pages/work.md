@@ -5,7 +5,7 @@ permalink: /work/
 ---
 
 Concise examples of past professional projects.  
-<p>&nbsp;</p>
+&nbsp;  
 Project | Description
 ------------ | -------------
 Forecast Model for Strike Replacement Plan | In response to planned nursing strike, I built multiple forecasting models to aid management in deciding when to reduce input streams. 
