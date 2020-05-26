@@ -18,3 +18,22 @@ def get_stock_data(stock,start_date,end_date):
     closing_data = data['Close']
     return closing_data
 ```
+With this function defined, downloading historical stock data into a Pandas dataframe is easy:
+
+```python
+stock = pandas.dataframe(get_stock_data(ticker_list),"2019-01-01","2020-05-19"))
+```
+In my case, I performed some research to manually build a list of "blue chip" companies.  I am seeking to find companies with a strong reputation that I can hopefully buy into while shares are at a discount. 
+
+## Analysis
+
+With a dataframe of historical daily stock prices ready, the fun part begins.  
+
+My process and logic is outlined below : 
+<ul>
+    <li>Calculate baseline and post COVID average stock price values</li>
+    <li>Find companies with the largest decrease of stock price due to COVID impact.</li>
+    <li>Of these companies, find the companies where the stock prices have not rebounded yet.</li>
+    <li>From this list, perform due diligence and decide whether an investment is a good idea.</li>
+</ul>
+    
