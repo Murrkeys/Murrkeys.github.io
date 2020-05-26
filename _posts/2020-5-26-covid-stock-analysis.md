@@ -36,4 +36,20 @@ My process and logic is outlined below :
     <li>Of these companies, find the companies where the stock prices have not rebounded yet.</li>
     <li>From this list, perform due diligence and decide whether an investment is a good idea.</li>
 </ul>
+
+I will share some of my code snippets below to illustrate how I can use Pandas to easily calculate the information above. 
+
+To calculate the baseline and post COVID average stock price : 
+```python
+baseline_avg = stock.loc['2019-01-01':'2020-01-31'].mean(axis=0)
+covid_avg = stock.loc['2020-05-01':'2020-05-19'].mean(axis=0)
+```
+To find companies with the largest decrease : 
+```python
+average_diff = baseline_avg - covid_avg
+decr_stock = average_diff[average_diff>0].sort_values(ascending=False)
+```
+The image below shows what I mean when I say companies where the stock prices have not rebounded yet : 
+
+<img src="/images/stock example.jpg" alt="Stock Example"/>
     
