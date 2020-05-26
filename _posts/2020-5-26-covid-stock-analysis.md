@@ -1,6 +1,6 @@
 ---
 layout: post
-title: COVID-19 Impact on the Stock Market : A Silver Lining
+title: COVID-19 Impact on the Stock Market - A Silver Lining
 categories: [Python,Code]
 ---
 
