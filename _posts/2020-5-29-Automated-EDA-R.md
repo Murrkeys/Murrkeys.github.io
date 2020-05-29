@@ -15,6 +15,7 @@ Anytime you begin working with a new dataset, you typically begin by performing 
     <li>Do any correlations exist between columns?</li>
     <li>What is the frequency of the categorical variables</li>
 </ul>
+
 There are many questions I seek to answer when first analyzing a dataset. And while the process is not always the same, a majority of the questions are answered in every single EDA.  There are two main forms of EDA, univariate and bivariate analysis.  Univariate analysis is concerned with the characteristics of a single field, things like summary statistics and the shape of the data.  Bivariate analysis is concerned with how variables related to each other, things such as correlation and grouped summary statistics. 
 
 
