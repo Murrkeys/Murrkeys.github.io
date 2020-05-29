@@ -87,6 +87,86 @@ output_list <- lapply(data_new, num_descrip_stat)
 
 ~~~~
 
+For the numeric columns, I took a look at the density plots and the QQ Plots to assess the distribution and check whether the data follows a normal distribution : 
+
+~~~~
+#subset only numerical data
+num_data <- dplyr::select_if(data_new, is.numeric)
+
+#Density plots for numeric columns
+
+dens_plots <- lapply(names(num_data),function(g) {
+    ggplot(num_data, aes_(x=as.name(g)))+geom_density(color="black", fill="lightgrey")
+})
 
 
+#QQ Plots for Numerical Data
+
+qq_plots <- lapply(names(num_data), function(g) {
+  ggplot(num_data, aes_(sample=as.name(g))) + stat_qq()
+})
+
+~~~~
+
+For the categorical columns, I created bar charts to visually show the frequencies of the categories : 
+
+~~~~
+
+#Create Bar Charts for Categorical Data
+
+#subset only categorical data
+cat_data <- dplyr::select_if(data_new, is.factor)
+
+#Create list of bar charts for each categorical variable
+bar_charts <- lapply(names(cat_data), function(g) {
+  ggplot(cat_data, aes_(as.name(g))) + geom_bar()
+})
+
+~~~~
+
+Again, where possible so far, I attempted to store the results in an object for later access.  If I ever reach my goal, I can then access these outputs and add them to the final report output.  
+
+## Bivariate Analysis
+
+The Bivariate analysis is still a work in progress, but I will share the code I have so far.  
+
+For the numeric columns, I took a look at the correlations and the scatterplots to understand the relationships between the numerical fields :
+
+~~~~
+
+#correlation matrix
+corr <- rcorr(as.matrix(num_data))
+
+#Scatterplot for each combination of numeric columns
+
+for (num_one in num_data){
+    for (num_two in num_data){
+    plot <- ggplot(num_data, aes(x=num_one, y=num_two))+geom_point()
+        print(plot)
+        }
+    }
+~~~~
+
+I also attempted to create a Boxplot for each combination of categorical and numerical column : 
+
+~~~~
+
+#Boxplot for each combination of categorical and numerical data
+
+for (cat in cat_data){
+    for (num in num_data){
+    plot <- ggplot() + geom_boxplot(mapping = aes(x = reorder(cat, num, FUN = median), y = num))+coord_flip()
+    print(plot)
+        }
+    }
+    
+~~~~
+
+As you may have noticed,  I am not able to store the ggplot() objects in a list when looping through the columns. I haven't been able to find anything on the internet that helps in this area. For right now, the plots are printed out during each loop. It's not what I have in mind for my final product, but it will have to work for now. 
+
+## Conclusions and Future Work
+
+This is my first iteration of the solution. I was able to automate some of the work involved in going through an EDA process.  There is still much more to do!  To reach my goal of creating a ready made report,  I will need to work further on the bivariate analysis. Also, I would like to pull out key findings from my EDA (such as correlations, groups with higher averages across numerical columns, outlier identification) and share those in my report.  There is definitely more to come.
+
+You can find my script at [Github](https://github.com/Murrkeys/EDA-R).  Please let me know if you have any suggestions! 
 
