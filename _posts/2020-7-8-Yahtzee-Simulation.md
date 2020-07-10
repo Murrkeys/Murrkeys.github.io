@@ -66,7 +66,11 @@ I won't include the code for the play_game() function. It is fairly easy to foll
 
 ## Simulation and Analysis
 
-The entire goal of this program was to simulate   
+Now that my program properly plays a game of Yahtzee, I can perform simulation analysis to do some really cool things!
+
+First, I want to run 100, 1000, and 10000 simulations to take a look at the resulting distributions.  This will let me research the range of scores I can expect with a given strategy.  
+
+
 
  
 
