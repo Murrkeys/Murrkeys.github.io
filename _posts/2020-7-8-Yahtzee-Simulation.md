@@ -74,10 +74,10 @@ For 100 games, the resulting mean final score is 189.1 and has a standard deviat
 <img src="/images/100 plot.png" alt="100 Games Distribution"/>
 
 For 1,000 games, the resulting mean final score is 187.9 and has a standard deviation of 36.7.  The distribution is below : 
-<img src="/images/1000 plot.png" alt="1,000 Games Distribution"/>
+<img src="/images/1000 Plot.png" alt="1,000 Games Distribution"/>
 
 For 10,000 games, the resulting mean final score is 187.6 and has a standard deviation of 36.5.  The distribution is below : 
-<img src="/images/10000 plot.png" alt="10,000 Games Distribution"/>
+<img src="/images/10000 Plot.png" alt="10,000 Games Distribution"/>
 
 Also, the bar chart below shows the frequency of games in which the given category did not have a score : 
 <img src="/images/10000 Category.png" alt="10,000 Games Category"/>
