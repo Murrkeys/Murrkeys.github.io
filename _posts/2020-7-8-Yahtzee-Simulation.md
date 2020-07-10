@@ -66,14 +66,26 @@ I won't include the code for the play_game() function. It is fairly easy to foll
 
 ## Simulation and Analysis
 
-Now that my program properly plays a game of Yahtzee, I can perform simulation analysis to do some really cool things!
+Now that my program properly plays a game of Yahtzee, I can perform simulation analysis to do some really cool things!  Again, I won't share the code here but it is available on my Github.
 
-First, I want to run 100, 1000, and 10000 simulations to take a look at the resulting distributions.  This will let me research the range of scores I can expect with a given strategy.  
+First, I want to run 100, 1,000, and 10,000 simulations to take a look at the resulting distributions.  This will let me research the range of scores I can expect with a given strategy.  
 
+For 100 games, the resulting mean final score is 189.1 and has a standard deviation of 35.2.  The distribution is below : 
+<img src="/images/100 plot.png" alt="100 Games Distribution"/>
 
+For 1,000 games, the resulting mean final score is 187.9 and has a standard deviation of 36.7.  The distribution is below : 
+<img src="/images/1000 plot.png" alt="1,000 Games Distribution"/>
 
- 
+For 10,000 games, the resulting mean final score is 187.6 and has a standard deviation of 36.5.  The distribution is below : 
+<img src="/images/10000 plot.png" alt="10,000 Games Distribution"/>
+
+Also, the bar chart below shows the frequency of games in which the given category did not have a score : 
+<img src="/images/10000 Category.png" alt="10,000 Games Category"/>
+
+As you can see, Yahtzee and a Large Straight had the highest number of games with no score. This makes sense, as these two categories have the lowest probability of occuring.  
 
 ## Conclusion
+
+This was a really neat project, and I enjoyed going through the complexities of coding the logic in Yahtzee. While my program works, it is far from the optimal solution. This paper, [Optimal Yahtzee](http://gunpowder.cs.loyola.edu/~jglenn/research/optimal_yahtzee.pdf), finds an optimal value of 245 which is much higher than the mean value above of 187. My solution still has plenty of improvment in the choice logic.  I look forward to continuing work on both the choice logic, and hopefully coding different strategies to simulate the resulting outcomes.  
 
 
