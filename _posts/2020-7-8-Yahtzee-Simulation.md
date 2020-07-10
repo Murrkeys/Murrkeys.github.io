@@ -80,7 +80,7 @@ For 10,000 games, the resulting mean final score is 187.6 and has a standard dev
 <img src="/images/10000 Plot.png" alt="10,000 Games Distribution"/>
 
 Also, the bar chart below shows the frequency of games in which the given category did not have a score : 
-<img src="/images/10000 Category.png" alt="10,000 Games Category"/>
+<img src="/images/10000 Category.png" width = "200" height = "50" alt="10,000 Games Category"/>
 
 As you can see, Yahtzee and a Large Straight had the highest number of games with no score. This makes sense, as these two categories have the lowest probability of occuring.  
 
