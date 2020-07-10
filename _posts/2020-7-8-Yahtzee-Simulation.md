@@ -1,94 +1,75 @@
 ---
 layout: post
 title: Simulation and the Game of Yahtzee
-categories: [Python,Code]
+categories: [Python,Code,Simulation]
 ---
 
-As everyone knows, COVID-19 has thrown a wrench in our everyday lives and the economic market. However, with downside of the stock market, there is an opporunity for investors to buy stocks at a discounted price.  In this blog post, I will take a look at some quick analysis I conducted in Python to identify possible invesment opportunities.  
+My partner and I played a lot of games over our two month lockdown in Sydney.  One of these games, Yahtzee, was somewhat new to me and I found myself becoming obsessed with trying out new strategies as we played.  For those readers who are not familiar with the game of Yahtzee, you can find the basic rules here : [Yahtzee Rules](http://grail.sourceforge.net/demo/yahtzee/rules.html). I began to daydream about simulating a game of Yahtzee being played, so I could easily test out different strategies and analyse the resulting outcomes.  The post below summarizes my process for building this Yahtzee simulation program, enjoy! 
 
-## Using Stock Data
+## The Algorithm
 
-This being my first time using Python to analyze stock data, I spent a huge chunk of my time figuring out the best way to do so. Luckily for you, I have summarized my method using the [yFinance](https://pypi.org/project/yfinance/) package.  You can find detailed infomration and summary at the link. For this post, I will just share a handy little function I wrote to make downloading lists of stock data fast and easy.  The function below can take in a single ticker or list of tickers, the start and end date, and returns the closing price for each ticker by day: 
+It turns out that simulating a game of Yahtzee is no trivial matter!  A game consists of 13 rounds in which a player has 3 chances to roll 1-5 die in order to maximize their score for a given category.  The category the player goes for depends on what categories are left, the outcome of the first die roll, and the player's personal strategy.  The most difficult part in programming the game of Yahtzee is choosing the player's choice for a given round.  
 
-```python
-def get_stock_data(stock,start_date,end_date):
-    
-    data = yf.download(stock, start=start_date, end=end_date,threads=True)
-    closing_data = data['Close']
-    return closing_data
-```
-With this function defined, downloading historical stock data into a Pandas dataframe is easy:
+I ended up devising a greedy algoritihm implementation, one that chooses the optimal decision based on the current situation.  The algorithm decides which category the player will go for depending on the current roll of the die.  This can change mid-round and it does take into account what categories have already been scored. Overall, it is not perfect, but it works.  
 
-```python
-stock = pandas.dataframe(get_stock_data(ticker_list),"2019-01-01","2020-05-19"))
-```
-In my case, I performed some research to manually build a list of "blue chip" companies.  I am seeking to find companies with a strong reputation that I can hopefully buy into while shares are at a discount. 
-
-## Analysis
-
-With a dataframe of historical daily stock prices ready, the fun part begins.  
-
-My process and logic is outlined below : 
+My final program consists of three scripts and all the code can be found here : [Github](https://github.com/Murrkeys/Yahtzee-Simulation) : 
 <ul>
-    <li>Calculate baseline and post COVID average stock price values</li>
-    <li>Find companies with the largest decrease of stock price due to COVID impact.</li>
-    <li>Of these companies, find the companies where the stock prices have not rebounded yet.</li>
-    <li>From this list, perform due diligence and decide whether an investment is a good idea.</li>
+    <li>Functions</li>
+    <li>Play_Game</li>
+    <li>Simulation</li>
 </ul>
 
-I will share some of my code snippets below to illustrate how I can use Pandas to easily calculate the information above. 
+The Functions script include the functions for rolling the die, making the choice, and scoring for each round.  I will give a brief example of the code in each function below. 
 
-To calculate the baseline and post COVID average stock price : 
+The roll_dice function takes the input die_array and rolls the dice for any element that is zero.  The first roll will roll all the die, and subsequent rolls of the die will depend on what choice was made from the next function. 
 ```python
-baseline_avg = stock.loc['2019-01-01':'2020-01-31'].mean(axis=0)
-covid_avg = stock.loc['2020-05-01':'2020-05-19'].mean(axis=0)
-```
-To find companies with the largest decrease : 
-```python
-average_diff = baseline_avg - covid_avg
-decr_stock = average_diff[average_diff>0].sort_values(ascending=False)
-```
-The image below shows what I mean when I say companies where the stock prices have not rebounded yet : 
+def roll_dice(die_array):
 
-<img src="/images/stock example.jpg" alt="Stock Example"/>
-
-To do this, I decided to write a function that takes in the last *n* stock prices and calculates the slope of the best fit line through these data points.  The function is below : 
-```python
-def trenddetector(n,array,order=1):
-    data = array.tail(n)
-    list_of_index = list(range(0,n,1))
-    result = np.polyfit(list_of_index, list(data), order)
-    slope = result[-2]
-    return float(slope)
+    for k in range(0,len(die_array)):
+      
+        if die_array[k] == 0:
+            die_array[k] = rand.randint(1,6)
+    return die_array
 ```
-With the slopes calculated, I can then check which of the companies have a negative slope for the stock price over the defined previous number of days (in my case, 14 days) : 
-```python
-#Define which tickers to perform trend detection function on
-stock_temp = stock[decr_stock.index.values]
-#Apply the trend detection function to these tickers
-trend = stock_temp.apply(lambda x : trenddetector(14,x),axis=0)
-#Final list of tickers that had a decrease in stock price and negative trend over the last n days
-final_stock_list = stock_temp[trend<0]
-```
-Finally, I wrote one more function that prints the company information by accessing the ticker object in yFinance : 
+The choice function is the meat of the algorithm and determines what category will be scored and changes elements in the die_array to zero in order to re-roll these again.  Below, I include the logic for rolling for the Five category.  There are a number of checks I perform in order to make my choice to go for the Five category.  The unique_val array is simply the unique numbers rolled, and how many there were. I check to see if a number was rolled twice or more (a heuristic from experience), if 3 or 4 of a kind have already been chosen, if full house has already been chosen, if the number rolled twice or more is five, if I already have a score for 5, and finally if nothing else has been chosen yet.  If all of these values are TRUE, then I decide to score the five category (at array index 4).  The for loop changes any die value not equal to five to zero so it can be rolled again in order to get more fives. 
 
 ```python
-def print_stock_info (array):
-    stk_list = list(array.index.values)
-    
-    for i in range(0,len(stk_list)-1):
-        stock = stk_list[i]
-        tick = yf.Ticker(stock)
-        if 'shortName' in tick.info:
-            print(tick.info['shortName'])
-        if 'sector' in tick.info:
-            print(tick.info['sector'])
-    return
-print_stock_info(final_stock_list)
-
+ #Five
+    if unique_val.iloc[0] >= 2 \
+    and x_kind_check \
+    and fh_check \
+    and unique_val.index[0] == 5 \
+    and score_check[4] \
+    and choice == 999
+        choice = 4
+        for k in range(0,len(die_array)):
+            if die_array[k] == 5:
+                die_array[k] = die_array[k]
+            else:
+                die_array[k] = 0
 ```
-At this point, I have a list of companies that meet my criteria.  Please understand that I performed my due diligence after this point to make my decisison of which stocks to buy.  
+After I have rolled three times, it is time to calculate the final score for the round.  The round_score function takes in the final choice and outputs the score.  Following the Five example, the below example calculates the score by summing only the five dice.  It then assigns this score to the score_array at index 4 and sets the score check array to False at index 4 to make a note that this category has been scored. 
+
+```python
+    #Five score
+    if choice == 4:
+        score = 0
+        for k in range(0,len(die_array)):
+            if die_array[k] == 5 :
+                score = score+5
+
+        score_array[4] = score
+        score_check[4] = False
+```
+
+I won't include the code for the play_game() function. It is fairly easy to follow and anyone interested can take a look at the code on my Github.  Simply put, it loops through 13 rounds. In each round, there are three rolls of the die, and a choice is made following each roll on which die to roll again. The round score is stored, and the next round begins. At the end, the final score and which categories had a score are the output.  
+
+## Simulation and Analysis
+
+The entire goal of this program was to simulate   
+
+ 
 
 ## Conclusion
 
-The yFinance Python package makes it incredibly easy to download and analyze historical stock market data.  While my process my fairly straightforward, Pandas made it easy to quickly calculate the values I needed to compare.  This is my first foray into stock market analysis, but I will definitely be returning with some more content at some point in the future.  Please take a look at my [Github](https://github.com/Murrkeys/Stock-Analysis) for all the scripts related to this project.
+
