@@ -4,4 +4,11 @@ title: Personal Posts
 permalink: /other/
 ---
 
-A random collection of personal thoughts and memories. 
+A random collection of personal thoughts and memories.
+
+<ul class="posts">
+
+	  {% for post in site.other_post %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+</ul>
