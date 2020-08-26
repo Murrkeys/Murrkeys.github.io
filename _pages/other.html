@@ -6,8 +6,8 @@ permalink: /other/
 
 <ul class="posts">
 
-	  {% for post in site.otherposts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% for otherposts in site.otherposts %}
+	    <li><span>{{ otherposts.date | date_to_string }}</span> » <a href="{{ otherposts.url }}" title="{{ otherposts.title }}">{{ otherposts.title }}</a></li>
 	  {% endfor %}
 </ul>
 
