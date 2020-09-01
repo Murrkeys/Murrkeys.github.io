@@ -29,8 +29,4 @@ The application of data science techniques in population health, health system o
 
 I grew up in Charlotte, NC. I attended university in Ithaca, NY.  I have worked and lived in the greater New York City area and San Diego, CA. I now live in Sydney, NSW.  
 
-I love watching and playing sports, mainly soccer. During the weekdays, I am usually reading, running, swimming, cooking, and watching movies.  On the weekends, I am usually traveling and enjoying the outdoors.  
-
-Please visit the *Other* page for personal related content. 
-
-
+I love watching and playing sports, mainly soccer. During the weekdays, I am usually reading, running, swimming, cooking, and watching movies.  On the weekends, I am usually traveling and enjoying the outdoors.
