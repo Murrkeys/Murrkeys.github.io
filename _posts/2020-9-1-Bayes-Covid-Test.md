@@ -16,7 +16,7 @@ Baye's Theorem goes a step further by incorporting our prior knowledge about COV
 
 The Baye's Theorem formula is below :
 
-<img src="/images/BT_1.png"/>
+<img src="/images/BT_1.PNG"/>
 
 Where,  
 * P(A) is the probability of event A.
@@ -26,11 +26,11 @@ Where,
 
 To illustrate this using the COVID-19 example, I can write the Baye's Theorem formula as : 
 
-<img src="/images/BT_2.png"/>
+<img src="/images/BT_2.PNG"/>
 
 I will use the following table to illustrate the testing outcome of a hypothetical population of 10,000 patients : 
 
-<img src="/images/BT_3.png"/>
+<img src="/images/BT_3.PNG"/>
 
 
 ## Conclusion
