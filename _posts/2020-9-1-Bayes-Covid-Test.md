@@ -12,11 +12,11 @@ From the above announcment, a clinical study concluded that the test demonstrate
 
 To explain specificity and sensitivity, I can make the following statement : From the COVID-19 test above, if a patient receives a positive test, then that patient has a 97.1% probability of actually being positive. Similarily, if the patient receives a negative test, then that patient has a 98.5% chance of actually being negative. 
 
-Baye's Theorem goes a step further by incorporting our prior knowledge about COVID-19 prevalence in the United States. Currently, approximately 1% of the United States population is infected with COVID-19 (estimated from [link](https://www.worldometers.info/coronavirus/country/us/))
+Baye's Theorem goes a step further by incorporting our prior knowledge about COVID-19 prevalence in the United States. Currently, approximately 1% of the United States population is infected with COVID-19 (estimated from [link](https://www.worldometers.info/coronavirus/country/us/)).
 
-$$$
+$$
 P(A | B) = (P(B | A)P(A)) / P(B)
-$$$
+$$
 
 ## Conclusion
 
