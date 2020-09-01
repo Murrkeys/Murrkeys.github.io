@@ -18,8 +18,11 @@ The Baye's Theorem formula is below :
 
 Where, 
 P(A) is the probability of event A.
+
 P(B) is the probability of event B.
+
 P(A|B) is the probability of observing event A if B is true.
+
 P(B|A) is the probability of observing event B if A is true.
 
 To illustrate this using the COVID-19 example, I can write the Baye's Theorem formula as : 
