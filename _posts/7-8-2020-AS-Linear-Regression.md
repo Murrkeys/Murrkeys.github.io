@@ -31,11 +31,13 @@ I observe that the treatment groups for both the Flexion and Rotation angle diff
 To study the possible treatment effect, I will create two linear models for both the flexion and rotation angle differences for one hip side.  The linear model summaries can be seen below, using the right hips of the patients. 
 
 <img src="/images/LM_4.PNG">  
---------------------------------------------------------
+-----------------------------------------------------------
 <img src="/images/LM_5.PNG">  
 
 From the first output, I can conclude that there does not appear to be a treatment effect for the flexion angle difference. This is due to the grp variable not being significant at any level.  However, from the second output, I observe that there does appear to be a treatment effect for the rotation angle difference. The grp variable is significant at the 99% significance level for the right side hips.  
 
+Also, since the linear models are simply a linear equation, I can also use the estimated coeffiecient to approximate the impact the treatment had.  From the second output, I see that the estimated coefficient of 5.4 means that patients in the treatment group experienced an improvment of 5.4 degrees in the rotation angle difference on average. 
+
 ## Conclusion
 
-
+This is a really simple application of using linear models for health data.  I am able to quickly observe the treatment effect on one mobility outcome and approximate the numerical effect on the outcome.  In further blog posts, I hope to expand on the application of linear regression to healthcare data.   
