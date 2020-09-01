@@ -21,8 +21,8 @@ The Baye's Theorem formula is below :
 Where,  
 * P(A) is the probability of event A.
 * P(B) is the probability of event B.
-* P(A|B) is the probability of observing event A if B is true.
-* P(B|A) is the probability of observing event B if A is true.
+* P(A/B) is the probability of observing event A if B is true.
+* P(B/A) is the probability of observing event B if A is true.
 
 To illustrate this using the COVID-19 example, I can write the Baye's Theorem formula as : 
 
@@ -35,11 +35,11 @@ I will use the following table to illustrate the testing outcome of a hypothetic
 Using this scenario and the above table, I compute the following : 
 * P(COVID-19) is the unconditional probability of having COVID-19 = 100/10,000 = 1%.
 * P(Positive Test) is the unconditional probability of a positive test = 195/10,000 = 1.95%.
-* P(Positive Test | COVID-19) is the sensitivity of the test = 97/100 = 97% (rounded in this example).
+* P(Positive Test / COVID-19) is the sensitivity of the test = 97/100 = 97% (rounded in this example).
 
-To compute our statistic of interest, P(COVID-19 | Positive Test), I can use the formula to calculate (.971) * (.01) / (.0195) = 49.8%.  What exactly does this mean?  This means that contrary to the intuitive belief that 97.1% of people who test positive actually have COVID-19, in reality, 49.8% of people who test positive actually have COVID-19. This is illustrated in the positive test row in the hypothetical population table above. 
+To compute our statistic of interest, P(COVID-19/Positive Test), I can use the formula to calculate (.971) * (.01) / (.0195) = 49.8%.  What exactly does this mean?  This means that contrary to the intuitive belief that 97.1% of people who test positive actually have COVID-19, in reality, 49.8% of people who test positive actually have COVID-19. This is illustrated in the positive test row in the hypothetical population table above. 
 
-Similarly, I can compute the P(No COVID-19 | Negative Test) as :
+Similarly, I can compute the P(No COVID-19/Negative Test) as :
 
 <img src="/images/BT_4.PNG"/>
 
