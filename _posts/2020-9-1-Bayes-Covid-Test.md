@@ -14,7 +14,9 @@ To explain specificity and sensitivity, I can make the following statement : Fro
 
 Baye's Theorem goes a step further by incorporting our prior knowledge about COVID-19 prevalence in the United States. Currently, approximately 1% of the United States population is infected with COVID-19 (estimated from [link](https://www.worldometers.info/coronavirus/country/us/)).
 
-The Baye's Theorem formula is below : 
+The Baye's Theorem formula is below :
+
+<img src="/images/BT_1.png"/>
 
 Where,  
 * P(A) is the probability of event A.
@@ -24,7 +26,11 @@ Where,
 
 To illustrate this using the COVID-19 example, I can write the Baye's Theorem formula as : 
 
-I will use the following table to illustrate the testing outcome of a hypothetical population of 1000 patients : 
+<img src="/images/BT_2.png"/>
+
+I will use the following table to illustrate the testing outcome of a hypothetical population of 10,000 patients : 
+
+<img src="/images/BT_3.png"/>
 
 
 ## Conclusion
