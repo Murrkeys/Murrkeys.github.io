@@ -14,10 +14,17 @@ To explain specificity and sensitivity, I can make the following statement : Fro
 
 Baye's Theorem goes a step further by incorporting our prior knowledge about COVID-19 prevalence in the United States. Currently, approximately 1% of the United States population is infected with COVID-19 (estimated from [link](https://www.worldometers.info/coronavirus/country/us/)).
 
+The Baye's Theorem formula is below : 
 
-\begin{equation}
- \Pr(A|B)=\frac{\Pr(B|A)\Pr(A)}{\Pr(B|A)\Pr(A)+\Pr(B|\neg A)\Pr(\neg A)}
-\end{equation}
+Where, 
+P(A) is the probability of event A
+P(B) is the probability of event B
+P(A|B) is the probability of observing event A if B is true
+P(B|A) is the probability of observing event B if A is true
+
+To illustrate this using the COVID-19 example, I can write the Baye's Theorem formula as : 
+
+I will use the following table to illustrate the testing outcome of a hypothetical population of 1000 patients : 
 
 
 ## Conclusion
