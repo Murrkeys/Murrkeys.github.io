@@ -37,9 +37,14 @@ Using this scenario and the above table, I compute the following :
 * P(Positive Test) is the unconditional probability of a positive test = 195/10,000 = 1.95%.
 * P(Positive Test | COVID-19) is the sensitivity of the test = 97/100 = 97% (rounded in this example).
 
-To compute our statistic of interest, P(COVID-19 | Positive Test) 
+To compute our statistic of interest, P(COVID-19 | Positive Test), I can use the formula to calculate (.971) * (.01) / (.0195) = 49.8%.  What exactly does this mean?  This means that contrary to the intuitive belief that 97.1% of people who test positive actually have COVID-19, in reality, 49.8% of people who test positive actually have COVID-19. This is illustrated in the positive test row in the hypothetical population table above. 
 
+Similarly, I can compute the P(No COVID-19 | Negative Test) as :
 
+<img src="/images/BT_4.PNG"/>
+
+From the table, the calculation is (.985) * (.99) / (.9805) = 99.45%.  This is close to the specificity of the test and is not a suprising result given the estimate that 99% of the population does not have COVID-19. 
 
 ## Conclusion
 
+The new COVID-19 test from Abbott offers promise for helping the United States remove to normalcy. Decision makers and public health experts need to understand the above calculations concerning Baye's Theorem when evaluating new tests and what it means for policy.  From above, it is important to realize that patients receiving a negative test can be confident that they don't actually have COVID-19.  However, patients receiving a positive test only have about a 50% chance of having COVID-19.  This is important as it ensures that there is a limited amount of people who are testing negative and not isolating when in fact they have COVID-19.  This errs on the side of caution, and the test should have a positive impact on returning life to normalcy.  
