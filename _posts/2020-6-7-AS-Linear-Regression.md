@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Treatment Effects Using Linear Regression
-categories: [R,Code]
+categories: [R,Code,Healthcare]
 ---
 [Ankylosing Spondylitis](https://en.wikipedia.org/wiki/Ankylosing_spondylitis) is an auto-immune disease which causes inflammation and eventual seizing up (ankylosis) of the joints of the spine, and to a lesser extent of the hips and shoulders.  To determine the effects of treatment on this disease, patients were randomly allocated to either a treatment group, in which they received physiotherapy involving daily stretching exercises for their hip joints, or to a control group in which no stretching or other physiotherapy was provided.  Hip mobility in terms of flexion (bringing the knee up towards the chest) and rotation (rotating the knee inwards and outwards) were measured on each side (right and left), before the study commenced, and after it was completed.
 
