@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Colon Cancer Survival Analysis
-categories: [R,Code]
+categories: [R,Code,Healthcare]
 ---
 In this post, I will be conducting analysis on colon cancer survival.  The dataset include information from a clinical trial on the effectiveness of two different types of chemotherapy (levamisole and levamisole+5-fluorouracil) compared to controls (i.e. no chemotherapy treatment) on survival from stage B/C colon cancer.  
 
