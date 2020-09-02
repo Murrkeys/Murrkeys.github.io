@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Australia Hospital Dashboards using R Shiny
+title: Average Length of Stay with R Shiny
 categories: [R,Code,Healthcare]
 ---
 
