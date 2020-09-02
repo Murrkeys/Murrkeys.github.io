@@ -25,22 +25,22 @@ The UI object controls the layout and appearance of the app.  The UI code for th
 ~~~~
 ui <- fluidPage(
              
-             sidebarLayout(
-               sidebarPanel(
+     sidebarLayout(
+        sidebarPanel(
                  
-                 #input for Peer Group
-                 selectInput(inputId = "Task3.peer_group", label = "Peer group",
-                             choices = levels(hosp_los$Peer.group),
-                             selected = "Medium hospitals"),
-                 #input for Category
-                 selectInput(inputId = "Task3.category", label = "Category",
-                             choices = levels(hosp_los$Category),
-                             selected = "Knee replacement")),
+         #input for Peer Group
+         selectInput(inputId = "Task3.peer_group", label = "Peer group",
+                      choices = levels(hosp_los$Peer.group),
+                      selected = "Medium hospitals"),
+         #input for Category
+         selectInput(inputId = "Task3.category", label = "Category",
+                      choices = levels(hosp_los$Category),
+                      selected = "Knee replacement")),
                
-               mainPanel(
-                 #insert the plot
-                 plotOutput("ALOS_plot")
-               ))) 
+      mainPanel(
+          #insert the plot
+          plotOutput("ALOS_plot")
+          ))) 
 ~~~~
 
 The code is fairly simple.  I define the filter options (selectInput) and place them under the sidebarPanel.  In the mainPanel, I simply insert the plotOutput object that will be created in the server code. 
