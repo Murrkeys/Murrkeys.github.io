@@ -34,7 +34,7 @@ Data dictionaries need to be included for any dataset used in the analysis/resea
 
 Below is a screenshot showing a simple example of a few fields : 
 
-<img src="/images/DM_1.PNG"/>
+<img src="/images/DM_2.PNG"/>
 
 Where,  
 * P(A) is the probability of event A.
