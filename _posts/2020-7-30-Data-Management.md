@@ -55,7 +55,7 @@ Similar to cleaning documentation, the analysis documentation should include all
 
 ## Conclusion
 
-
+The process is lengthy, but the benefits outweight the initial work when conducting serious research.  The consequences are lower for performing a quick ad-hoc analysis in a professional setting when compared to publishing research in a journal, but I think the techniques above should be used by analysts and researchers alike.  I hope this post helped explain both the importance and some actual techniques for creating data management plans and reproducible research.
 
 
  
