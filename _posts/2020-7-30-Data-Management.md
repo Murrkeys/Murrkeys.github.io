@@ -23,8 +23,9 @@ A proper data management plan will have all the required information needed by y
 
 A detailed checklist can be found [here](https://www.dcc.ac.uk/DMPs/checklist).  
 
-In addition to a document answering the above questions, a metadata document and thorough data dictionaries need to be included.  The metadata document is a condensed version of the data management plan and can be referenced for people exploring the dataset and/or research for the first time. 
+In addition to a document answering the above questions, a metadata document and thorough data dictionaries need to be included.  The metadata document is a condensed version of the data management plan and can be referenced by people exploring the dataset and/or research for the first time. 
 
+Data dictionaries
 
 
 
