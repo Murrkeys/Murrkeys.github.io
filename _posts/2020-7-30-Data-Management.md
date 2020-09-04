@@ -25,12 +25,16 @@ A detailed checklist can be found [here](https://www.dcc.ac.uk/DMPs/checklist).
 
 In addition to a document answering the above questions, a metadata document and thorough data dictionaries need to be included.  The metadata document is a condensed version of the data management plan and can be referenced by people exploring the dataset and/or research for the first time. 
 
-Data dictionaries
+Data dictionaries need to be included for any dataset used in the analysis/research.  The data dictionary includes both the original and created variables.  The data dictionary should include the following information about each field : 
 
+* Variable Name
+* Description 
+* Format
+* Allowable Entries
 
+Below is a screenshot showing a simple example of a few fields : 
 
-
-<img src="/images/BT_1.PNG"/>
+<img src="/images/DM_1.PNG"/>
 
 Where,  
 * P(A) is the probability of event A.
