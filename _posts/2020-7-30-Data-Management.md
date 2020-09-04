@@ -10,9 +10,22 @@ Well, how to solve this issue?  Enter the unsung hero : Data Management Techniqu
 
 ## Data Management Techniques
 
-A proper data management plan has the following components : 
+A proper data management plan will have all the required information needed by yourself or others to locate, understand, and interpret the research in the future. While the format and content may differ, a data management plan should include all of the following : 
 
-* 
+* What data will be created?
+* Who owns the data and who will have access to it?
+* What formats will the data have?
+* Details about the ethics committee approvals.
+* Who will have access to your data and how will you protect for unnecessary access if data is sensitive/confidential in nature?
+* Data organistion: File naming conventions, folder structure.
+* Data storage: Where will the data be stored? Will it be backed up?
+* Data sharing: Will you share your data with others? How will you do this?
+
+A detailed checklist can be found [here](https://www.dcc.ac.uk/DMPs/checklist).  
+
+In addition to a document answering the above questions, a metadata document and thorough data dictionaries need to be included.  The metadata document is a condensed version of the data management plan and can be referenced for people exploring the dataset and/or research for the first time. 
+
+
 
 
 
@@ -27,4 +40,4 @@ Where,
 ## Reproducibile Research
 
 ## Conclusion
-
+ 
