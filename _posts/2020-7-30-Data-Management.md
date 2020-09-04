@@ -8,6 +8,8 @@ Have you ever recevied an email like this : *"Hi this is so and so.  Would you m
 
 Well, how to solve this issue?  Enter the unsung hero : Data Management Techniques for Reproducible Research!  Lost in the flashiness of statistics and machine learning algorithms, lies the most important part of any research project involving data that no one cares to talk about. The techniques needed to properly manage the data, and allow for the research to be reproducible. Since my data analyst position is not a research role, I was not familiar with this process.  In this blog post, I will explain the high level techniques associated with sound data management.  A process I am incorporating into my work flows, and you should too! 
 
+You can find previous assignments concerning data management techniques on my [Github](https://github.com/Murrkeys/data_management).  
+
 ## Data Management Techniques
 
 A proper data management plan will have all the required information needed by yourself or others to locate, understand, and interpret the research in the future. While the format and content may differ, a data management plan should include all of the following : 
@@ -39,9 +41,21 @@ Below is a screenshot showing a simple example of a few fields :
 
 ## Reproducibile Research
 
+Creating reproducible research includes detailed documentation highlighting the data cleaning and analysis process.  The method will differ between specific analysis, but the goal is always the same. In the future, anyone wishing to reproduce the research should be able to follow set steps and arrive at the same conclusion when starting with the same data. The data cleaning documentation should include :
 
+* Data quality checks (duplicates, allowable entries, missing data, etc)
+* Excluded records
+* Created Variables
+
+When possible, tables and figures should be included to illustrate the process and resulting impact on the dataset. A flowchart like below can be used : 
+
+<img src="/images/DM_1.PNG"/>
+
+Similar to cleaning documentation, the analysis documentation should include all the steps used in the analysis to arrive at a conclusion.  The logic and assumption used should always be shared, and when applicable, code should be shared to ensure consistency. Results and interpretation should also be shared to maximize the transparency of the research being conducted.  
 
 ## Conclusion
+
+
 
 
  
