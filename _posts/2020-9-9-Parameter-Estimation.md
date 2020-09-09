@@ -26,7 +26,7 @@ Below, the histograms for LOS for the first group and overall data can be observ
 
 <img src="/images/PE_1.PNG"/>
 
-Neither of these distributions look remotely close to normal, especially the first group.  As a result, simply taking the mean was not going to be a great estimate.  To 
+Neither of these distributions look remotely close to normal, especially the first group.  As a result, simply taking the mean was not going to be a great estimate.  In order to more accurately estimate the mean, I decided to use the bootstrapping method. 
 
 ## Bootstrap Method
 
