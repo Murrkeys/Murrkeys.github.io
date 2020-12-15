@@ -40,7 +40,7 @@ maternal demographics to complete the analysis. Below, the DAG for this
 analysis is pictured. Note, I am not working with any subject matter
 experts on this post so many of my assumptions might be inaccurate.
 
-![](images/dag-1.png)
+<img src="/images/dag-1.png" alt="DAG"/>
 
 The DAG is very busy, but it can be useful to map paths between exposure
 and outcome. For this analysis, I am interested in controlling for
@@ -149,7 +149,7 @@ identical means and near identical distributions of propensity scores.
     ## Unmatched    2404       0
     ## Discarded       0       0
 
-![](images/match-1.png)
+<img src="/images/match-1.png" alt="Matched Histogram"/>
 
 ### Estimating the Effect
 
