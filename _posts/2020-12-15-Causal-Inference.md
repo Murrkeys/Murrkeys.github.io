@@ -2,11 +2,6 @@
 layout: post
 title: Effect of Age on Preterm Birth : A Causal Inference Approach
 categories: [R,Statistics]
-
-output:
-  md_document:
-    variant: markdown_github
-    preserve_yaml: true
 ---
 
 ### Introduction
