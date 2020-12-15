@@ -1,7 +1,7 @@
 ---
-layout: "post"
-title: "Effect of Age on Preterm Birth : A Causal Inference Approach"
-categories: "[R,Statistics]"
+layout: post
+title: Effect of Age on Preterm Birth : A Causal Inference Approach
+categories: [R,Statistics]
 
 output:
   md_document:
@@ -46,7 +46,7 @@ maternal demographics to complete the analysis. Below, the DAG for this
 analysis is pictured. Note, I am not working with any subject matter
 experts on this post so many of my assumptions might be inaccurate.
 
-![](CI_Script_files/figure-markdown_github/dag-1.png)
+![](images/dag-1.png)
 
 The DAG is very busy, but it can be useful to map paths between exposure
 and outcome. For this analysis, I am interested in controlling for
@@ -155,9 +155,7 @@ identical means and near identical distributions of propensity scores.
     ## Unmatched    2404       0
     ## Discarded       0       0
 
-![](CI_Script_files/figure-markdown_github/match-1.png)
-
-    ## NULL
+![](images/match-1.png)
 
 ### Estimating the Effect
 
