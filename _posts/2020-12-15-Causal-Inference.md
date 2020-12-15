@@ -89,7 +89,7 @@ subject for every exposure subject. Similar here is defined by the
 researcher. In this case, I want to control for race, education level,
 ethnicity, and household income. Therefore, for every young mother, I
 want to find a normal mother with similar race, education level,
-ethnicity, and household income characteristics.
+ethnicity, and household income characteristics.  The former statement is possible by using "exact" matching, that is, matching subjects with exact variables. However, propensity score matching is used in this instance. This leads to subjects with a similar propensity score, however, it does not necessarily mean that the variables are exact.  This is a limitation of propensity score matching, but I will still be using this method in this case. 
 
 Below, you can observe the difference in the means between the treated
 and control groups for all the data, and for the matched data. You also
