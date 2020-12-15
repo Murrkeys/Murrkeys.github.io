@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Effect of Age on Preterm Birth : A Causal Inference Approach
-categories: R,Statistics
+title: Estimating Causal Effects
+categories: [R,Statistics]
 ---
-
 ### Introduction
 
 Young maternal age is associated with adverse pregnancy outcomes,
