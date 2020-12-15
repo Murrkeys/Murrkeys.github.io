@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Effect of Maternal Age on Preterm Birth : A Causal Inference Approach
+title: Effect of Maternal Age on Preterm Birth - A Causal Inference Approach
 categories: [R,Statistics]
 ---
 ### Introduction
