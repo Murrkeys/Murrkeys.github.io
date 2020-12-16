@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Effects on Childhood Growth Pattenrs Using Multilevel Modeling"
-categories: "[R,Statistics]"
+categories: [R,Statistics]
 ---
 
 ### Introduction
