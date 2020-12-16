@@ -2,11 +2,6 @@
 layout: "post"
 title: "Effects on Childhood Growth Pattenrs Using Multilevel Modeling"
 categories: "[R,Statistics]"
-
-output:
-  md_document:
-    variant: markdown_github
-    preserve_yaml: true
 ---
 
 ### Introduction
@@ -64,7 +59,7 @@ simple multilevel model and interpret the results!
 First, let’s take a look at a scatterplot to visualize the weight gain
 between the different genders as an example :
 
-![](MLM_Script_files/figure-markdown_github/plot-1.png)
+<img src="/images/plot-1.png" alt="Plot"/>
 
 Using this example, you can observe that the intercept for boys appears
 to be higher than girls, while the slope (or weight over time) appears
