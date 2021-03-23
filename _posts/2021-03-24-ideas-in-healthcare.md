@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction : Data Science Ideas in Healthcare
+title: Introduction - Data Science Ideas in Healthcare
 categories: [Personal,Healthcare]
 ---
 
