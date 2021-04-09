@@ -23,7 +23,7 @@ Please visit the *Work* page for examples of specific professional projects.
  
 ### Career Interests
 
-The application of data science techniques in population health, health system operations, and health outcomes.  
+The application of data science techniques in population health, health system operations, and public health.  
 
 ### Personal
 
