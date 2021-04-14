@@ -6,9 +6,15 @@ categories: [Personal,Healthcare]
 
 ### Introduction
 
-Like many people, I have a running Note on my iPhone that highlights all my big ideas. The type of ideas you come up with while fighting insomnia on a Monday night. Naturally, many of ideas have to do with applying data science in healthcare.  Throughout my Master's coursework in the past year, I've had the opportunity to reflect on the combination of what I'm learning and my background as an analyst in healthcare system operations.  The result is a bunch of cool ideas that I would love to work on in my future career.  In this post, I will introduce a few of these ideas with the aim to more fully elaborate on each one in a future post.  
+The healthcare landscape is continuing to transform from volume to value-based care models in order to lower costs and provide higher quality care for individuals and populations.  Population segmentation holds enormous potential to aid organizations as they transition to patient-centered care models.  However, population segmentation remains a relatively novel approach, and there is a tremendous opportunity to expand on current tools and offerings. 
 
-### Precision Medicine
+
+### What is Population Segmentation?
+
+At it's core, population segmentation is the process of identifying distinct sub-populations with similar characteristics.  The identification and definition of the sub-populations depends on the question at hand, as well as what data is being used.  For example, a segmentation analysis answering "How do we better attract and retain consumers?" will be very different from one answering "What interventions can we introduce for high utilizers?".  In both cases, the process to create segments is the same, but the data needed is very different.  
+
+
+
 
 ### How to Implement?
 
