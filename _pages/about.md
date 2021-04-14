@@ -14,7 +14,7 @@ I have a Bachelor of Science from Cornell University where I studied [Operations
 
 ### Work
 
-I am currently working as a Principal Analyst for the UC San Diego Health System. My work at UCSD has focused on building out the organization's analytics infrastructure while also engaging in multiple process improvement projects. 
+I have worked as a Principal Analyst for the UC San Diego Health System for the last five years. My work at UCSD has focused on building out the organization's analytics infrastructure while also engaging in multiple process improvement projects. 
 
 I began my career working as a Junior Data Scientist for Verizon Wireless. My work at Verizon focused on customer analytics, primarily in churn predictive modeling.
 
