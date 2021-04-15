@@ -19,6 +19,8 @@ The ideas I will touch on include the following :
 5. Patient Similarity Algorithms
 6. Flexible Healthcare Machine Learning Platform
 
+All of these ideas fall under what might be considered a [Learning Health System](http://www.learninghealthcareproject.org/section/background/learning-healthcare-system).  As defined by the Institute of Medicine in link above, a Learning Health System is a "system in which science, informatics, incentives, and culture are aligned for continuous improvement and innovation, with best practices seamlessly embedded in the delivery process and new knowledge captured as an integral by-product of the delivery experience".  In simple terms, the system should learn from every patient that interacts with the system, and then disseminate the resulting knowledge to care providers.  The above ideas focus more on the learning side of things, but I will also touch on how to operationalize these tools for use in care delivery and analysis.  
+
 ### Conclusions
 
 While everything listed above is merely an idea, they are all possible and have important implications for improving healthcare delivery and outcomes.  In the specific posts, I hope to specify how these ideas can be implemented and explain their benefits.  Healthcare systems, payers, and product creators will all be interested in these techniques, and I'm sure some of them are already being worked on.  As always, feel free to reach out and connect if interested! 
