@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Science Ideas in Healthcare - Patient Segmentation
+title: Data Science Ideas in Healthcare - Population Segmentation
 categories: [Personal,Healthcare]
 ---
 
