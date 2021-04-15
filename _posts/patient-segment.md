@@ -15,12 +15,9 @@ To achieve true patient-centered care, an integrated care model is needed.  Inte
 
 At it's core, population segmentation is the process of identifying distinct sub-populations with similar characteristics.  The identification and definition of the sub-populations depends on the question at hand, as well as what data is being used.  For example, a segmentation analysis answering "How do we better attract and retain consumers?" will be very different from one answering "What interventions can we introduce for high utilizers?".  In both cases, the process to create segments is the same, but the data needed is very different.  The former will require customized survery data, along with demographic data, to understand patient's attitudes and preferences towards healthcare.  The latter will require clinic, ED, and hospital utilization and treatment data, along with demographic data, to understand patient's historical usage and morbidity patterns.  
 
-In general, the resulting segments can be used in a variety of ways.  
+In general, the resulting segments can be used in a variety of ways.  The most obvious application is tailoring services, programs, and interventions to those who need them most.  By doing this, outcomes are improved and costs are controlled for the entire population.  The outcomes and benefits are varied and can impact multiple areas, such as disease incidence, cost-effectiveness, worsening health states, and quality of life indicators.  The population segments also offer an opportunity for further analytical insights.  The segments can be extremely useful in predictive applications, where certain segments are associated with relevant clinical outcomes.   Also, the segments can be used as a stratification method in a variety of analysis workflows.  Within the segments themselves, insights can be generated for factors affecting how and why certain sub-populations fall into a segment.  Overall, population segmentation can be valuable as a standalone tool, but also offers plenty of value for further analysis. 
 
-
-
-
-
+If you are interested in learning about some real-world examples of patient segmentation, the following links can be used.  The "Better Health for London" [https://www.healthylondon.org/resource/better-health-london-report/] is a report developed by the London Health Commission that applies patient segmentation to understand the needs-based care for everyone.  The relevant section of the report is Section 3.1 : Making Care More Personal.  The "Bridges to Health" [https://outcomesbasedhealthcare.com/bridges-to-health-segmentation-model/] is a framework developed to pursue the health of each population segment, where different segments require different strategies.  Finally, Kaiser Permanente developed a Senior Segmentation Algorithm [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4116260/] for use in risk stratification and tailored interventions for older patients.   
 
 ### How to Implement?
 
