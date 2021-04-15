@@ -15,7 +15,7 @@ To achieve true patient-centered care, an integrated care model is needed.  Inte
 
 At it's core, population segmentation is the process of identifying distinct sub-populations with similar characteristics.  The identification and definition of the sub-populations depends on the question at hand, as well as what data is being used.  For example, a segmentation analysis answering "How do we better attract and retain consumers?" will be very different from one answering "What interventions can we introduce for high utilizers?".  In both cases, the process to create segments is the same, but the data needed is very different.  The former will require customized survery data, along with demographic data, to understand patient's attitudes and preferences towards healthcare.  The latter will require clinic, ED, and hospital utilization and treatment data, along with demographic data, to understand patient's historical usage and morbidity patterns.  
 
-In both cases, the resulting segments can be applied in a variety of ways.  
+In general, the resulting segments can be applied in a variety of ways.  
 
 
 
