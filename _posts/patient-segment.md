@@ -21,6 +21,12 @@ If you are interested in learning about some real-world examples of patient segm
 
 ### How to Implement?
 
+The implementation of population segmentation depends entirely on the data available.  If the data needed to represent a problem is not available, then population segmentation methods will be useless.  In many instances, custom primary data sources, such as surveys, will be needed to properly create segments.  Once the data is available, many times unsupervised machine learning approaches are used to create the sub-populations.  Clustering algorithms, such as k-means, are popular for their simplicity and usefulness. Other clustering algorithms, such as DBSCAN and Hierarchical Clustering, can be applied depending on the problem at hand.
+
+The operationalization will depend entirely on what the segments will be used for. Automated dashboards and reports can be created that visualize the segments and monitor key clinical indicators within them.  Segments can also be used in process improvment projects, to tailor interventions to the correct group.  Another interesting use is monitoring transitions between segments, creating a process to identify and notify providers when patients move into a new segment.  Overall, the segments are merely another useful feature that data analysts and scientists can use for their workflows. 
+
 ### Conclusions
+
+Population segmentation provide a range of benefits to both policy makers and care providers.  Integrative care models are here to stay, and population segmentation is a powerful tool needed to support these models now and in the future.  As this movement towards true patient-centered care grows, data-driven approaches are needed to ensure that the right patient is receiving the right care at the right time.  Population segmentation obviously holds enormous potential, and I would love to work on these problems in the future.  As always, please reach out to connect if this interests you! 
 
 
