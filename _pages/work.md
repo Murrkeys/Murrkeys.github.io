@@ -15,4 +15,5 @@ Concise examples of past professional projects.
 |<a href="/documents/Length of Stay Reduction Project.pdf">Length of Stay Reduction</a>| I provided analysis and modeling required to complete an organization wide length of stay reduction project.|
 |<a href="/documents/LSS.pdf">Reducing ALOS in BMT Patients</a>| To complete my Lean Six Sigma Black Belt, I led a process improvement project to reduce length of stay in admitted Bone Marrow Transplant patients.|
 |<a href="/documents/EVS Analysis.pdf">Environmental Services Process Improvement</a>| I provided data analysis and process improvement methodologies to support a Lean Six Sigma project tasked with improving the environmental services process for cleaning rooms.|
+|<a href="/documents/DS_Creation.pdf">Novel Data Source Creation</a>|To support the transition of multiple Excel dashboards to Tableau, I created multiple data sources that required complex SQL and data ingestion from third party software.|
 
