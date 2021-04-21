@@ -16,7 +16,7 @@ I am of the opinion that for the majority of cases, this exercise should be enti
 
 Process modeling aims to improve processes by optimizing the efficiency of connected activities in the provision of a product or service. There are a multitude of techniques, some common ones include flow charts, control flow diagrams, and gantt charts. Traditionally, the process would be visualized similar to below :
 
-<img src="/images/delay_pic.png" alt="Discharge Delay Workflow"/>
+<img src="/images/delay_pic.PNG" alt="Discharge Delay Workflow"/>
 
 This flow chart visualizes the workflow for a new nurse manager process.  As you can see, the activities are organized in order and by whom is responsible. Additional information is avaiable, such as which technology is needed and decision points.  You can imagine adding analysis to this flow chart to include how long different activities take and opportunities to remove or optimize certain ones.  In this example, the process work flow was created by shadowing nurse managers, a time intensive activity.  
 
