@@ -26,7 +26,19 @@ There are three main types of process mining.  Discovery refers to process minin
 
 ### Process Mining in Healthcare
 
+Electronic Health Records (EHRs) offer a promising opportunity for process mining.  In an EHR, almost every event and action conducted is stored with both the event and time stamp.  Within the EHR there are many different types of data that is being stored.  Continous vital signs, patient movement, radiology utilization, and mediciation administration are a few different types of data that are included.  Obviously, there is a treasure trove of information here that is not being used to it's full capability today. Using the three types of process mining, I will illustrate a few specific examples of process mining applications in healthcare.  
+
+The discovery process has a wide variety of use cases, however care pathways are the first (and probably most important!) one that come to mind.  Care pathways are the standard processes that patient's following for a specific diagnosis or procedure. For example, patients undergoing a knee replacement follow very similar trajectories post procedure until discharge from the hospital.  Discovery process mining can be used to define the most commonly followed paths for different groups of patients, and also find subsets of variations of these paths.  This is important information that can help standardize treatment plans and develop best practices. 
+
+The conformance process naturally builds off of the discovery process to ensure processes follow the standard treatment plan or best practice defined above.  Another example is using the conformance process to make sure both external and internal guidelines are met.  For example, many times strict timelines are needed for mediciation administration.  Failure to comply with the timeline can lead to adverse events and poor quality outcomes.  Process mining can be used to ensure the process is followed correctly, and also root cause analyze any deviations from what is expected. 
+
+Lastly, the performance process can be used to analyze processes, identify issues, and create potential solutions.  In many hospitals, the emergency department exceeds capacity limits almost on a daily basis.  A combination of patient's waiting for inpatient beds and inefficent treatment of ED patients leads to capacity issues, which results in negative consequences.  Performance process mining can be used to model out different pathways through the ED for different groups of patients.  Potential bottlenecks can be identified, and alternative strategies can be studied.  In this case, it could be identified that X-ray turnaround time was a bottleneck for a high percentage of patients or patients presenting with chest pain were spending a far longer time in the ED before discharging.  Whatever the problem might be, it would be difficult to identify without process mining tools. 
+
+These are just a few examples of process mining applications in healthcare. Delivering healthcare is one giant process comprised of many small processes.  And process mining can help discover and improve on these processes, leading to more efficient delivery and better outcomes for all. 
+
 ### How to Automate?
+
+
 
 ### Conclusions
 
