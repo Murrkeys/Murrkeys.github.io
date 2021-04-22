@@ -38,8 +38,6 @@ These are just a few examples of process mining applications in healthcare. Deli
 
 ### How to Automate?
 
-
-
 ### Conclusions
 
 
