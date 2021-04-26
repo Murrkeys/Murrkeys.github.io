@@ -46,6 +46,6 @@ This is no trivial task, and would require time and effort.  But, the idea is ce
 
 ### Conclusions
 
-In this post, I took a deep look at what process mining is and how it can be applied in a health setting. I illustrated a few use cases and also outlined how process mining could be automated and implemented in a healthcare setting.  As data collection continues to grow, there will continue to be a huge opportunity to leverage process log files and apply data science techniques in healtcare. I hope this post was a useful introduction to these ideas, and sparked your interest!  Please feel free to reach out and connect. 
+In this post, I took a deep look at what process mining is and how it can be applied in a health setting. I illustrated a few use cases and also outlined how process mining could be automated and implemented in a healthcare setting.  As data collection continues to grow, there will continue to be a huge opportunity to leverage process log files and apply data science techniques in healthcare. I hope this post was a useful introduction to these ideas, and sparked your interest!  Please feel free to reach out and connect. 
 
 
