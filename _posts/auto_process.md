@@ -38,6 +38,8 @@ These are just a few examples of process mining applications in healthcare. Deli
 
 ### How to Automate?
 
+When I think about automating process mining, I am thinking about a few different things.  As a discovery and performance process, I imagine a platform where analysts can upload their process log files and receive detailed analysis outlining their process.  The discovery function lies in defining the different variations the process takes, while the performance function lies in identifying possible issues and differences between the variations.  Software already exists that accomplishes this, one example I have worked with (and highly recommend) being [ProM](https://www.promtools.org/doku.php).  However, the difficulty actually lies in the data input.  
+
 ### Conclusions
 
 
